@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome - Kailash Kanth</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="Elegante Logo _N.K._ en Gradiente.png">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: 40px 40px;
+      z-index: -1;
+      animation: moveGrid 20s linear infinite;
+    }
+    
+    @keyframes moveGrid {
+      from { background-position: 0 0; }
+      to { background-position: 40px 40px; }
+    }
+    html, body {
+  height: 100%;              /* Make body take full height */
+  display: flex;             /* Use flexbox */
+  flex-direction: column;    /* Stack content vertically */
+}
+    
+
+main {
+  flex: 1; /* Push footer to the bottom */
+}
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+    }
+    .gradient-bg {
+      background: linear-gradient(90deg, #6366f1, #8b5cf6, #ec4899);
+    }
+    .animated-gradient {
+      background-size: 300% 300%;
+      animation: gradientMove 6s ease infinite;
+    }
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    @keyframes gradientText {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+.animated-text-gradient {
+  background: linear-gradient(
+    90deg, /* left to right gradient */
+    #48ec4b,
+    #ff3700,
+    #272adb,
+    #48ec4b,
+    #00bfff,
+    #ff8c00
+  );
+  background-size: 800% 800%;
+  animation: gradientText 7s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+    .footer {
+  text-align: center;
+  padding: 30px 10px;
+  background: linear-gradient(90deg, #07d2b4, #fc25b8);
+  color: white;
+}
+
+.social-icons {
+  margin-bottom: 15px;
+}
+
+.social-icons .icon {
+  margin: 0 15px;
+  font-size: 2.2rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* Glow Colors */
+.social-icons .linkedin:hover {
+  color: #0a66c2;
+}
+.social-icons .whatsapp:hover {
+  color: #25D366;
+  text-shadow: 0 0 10px #25D366, 0 0 20px #25D366;
+  animation: pulseGlow 1.5s infinite
+}
+.social-icons .github:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+  animation: pulseGlow 1.5s infinite
+}
+
+.social-icons .instagram:hover {
+  color: #e1306c;
+  text-shadow: 0 0 10px #e1306c, 0 0 20px #e1306c;
+  animation: pulseGlow 1.5s infinite
+}
+
+.social-icons .twitter:hover {
+  color: #1da1f2;
+}
+.social-icons .youtube:hover {
+  color: #ff0000;
+}
+
+.social-icons .resume:hover {
+  color: #00ffcc;
+}
+.neon-button {
+  color: #00fff0;
+  text-shadow: 0 0 5px #00fff0, 0 0 10px #00fff0, 0 0 20px #00fff0;
+}
+    /* Gradient Text Animation */
+    .gradient-text {
+      font-size: 1.25rem; /* Increase text size */
+      font-weight: bold;
+      text-align: left;
+      background: linear-gradient(270deg, #ff6a00, #ffcc00, #00ffcc, #ff00ff);
+      background-size: 800% 800%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientShift 8s ease infinite;
+    }
+
+    /* Gradient Animation */
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .breathing-glow-button {
+  display: inline-block;
+  animation: button-breathe 2.5s ease-in-out infinite,
+             button-glow 2.5s ease-in-out infinite;
+  transform-origin: center;
+  will-change: transform, box-shadow;
+}
+
+@keyframes button-breathe {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.08); }
+}
+
+@keyframes button-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.6), 
+                0 0 30px rgba(139, 92, 246, 0.4),
+                0 0 45px rgba(236, 72, 153, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(99, 102, 241, 0.9), 
+                0 0 50px rgba(139, 92, 246, 0.7),
+                0 0 70px rgba(236, 72, 153, 0.5);
+  }
+}
+    .tamil-text {
+      font-family: 'Noto Sans Tamil', sans-serif;
+    }
+    .breathing-img{
+  animation: breathing 4s ease-in-out infinite,
+             img-breathing-glow 4s ease-in-out infinite;
+}
+
+@keyframes breathing {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}       
+@keyframes img-breathing-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(0, 251, 255, 0.6), 
+                0 0 30px rgba(139, 92, 246, 0.4),
+                0 0 45px rgba(255, 0, 128, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(37, 241, 5, 0.9), 
+                0 0 50px rgba(139, 92, 246, 0.7),
+                0 0 70px rgba(236, 72, 153, 0.5);
+  }
+}
+element.style {
+    animation-delay: 100ms;
+}
+  .text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+.text-cyber {
+    --tw-text-opacity: 1;
+    color: rgb(0 240 255 / var(--tw-text-opacity, 1));
+}
+.text-sm {
+    font-size: .875rem;
+    line-height: 5rem;
+}
+.font-cyber {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+}
+.animate-fade-in-up {
+    animation: fade-in-up 2s ease-out;
+}
+.cyber-gradient-text {
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+    --tw-gradient-from: #00f0ff var(--tw-gradient-from-position);
+    --tw-gradient-to: rgb(0 240 255 / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    --tw-gradient-to: #b537f2 var(--tw-gradient-to-position);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.fade-in-up {
+      font-size: 50px;
+      opacity: 0;
+      transform: translateY(30px); /* start slightly down */
+      animation: fadeInUp 1.2s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    h2.fade-in-up {
+  line-height: 1.15;
+  overflow: visible;
+}
+.rounded-md {
+    border-radius: calc(var(--radius) - 2px);
+}
+.gap-1 {
+    gap: .25rem;
+}
+    #typewriter {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: bottom;
+  position: relative;
+}
+
+#typewriter::after {
+  content: "|";                  /* blinking cursor */
+  display: inline-block;         /* keep it inline with text */
+  margin-left: 2px;              /* little gap */
+  animation: blinkCursor 0.7s steps(1) infinite;
+  color: #00ffff;                /* neon cyan */
+  font-weight: bold;
+}
+
+@keyframes blinkCursor {
+  50% { opacity: 0; }
+}
+    .sign-in-btn {
+  background: linear-gradient(45deg, #ff00cc, #3333ff, #00ffff);
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  text-shadow: 0 0 5px #fff,
+               0 0 10px #0ff,
+               0 0 20px #0ff,
+               0 0 40px #0ff;
+  animation: glowText 2s infinite alternate;
+}
+
+.sign-in-btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #ff66ff, #3399ff, #33ffff);
+  box-shadow: 0 0 20px #ff00cc, 0 0 40px #3333ff, 0 0 60px #00ffff;
+}
+
+/* Neon glowing animation */
+@keyframes glowText {
+  from {
+    text-shadow: 0 0 5px #fff,
+                 0 0 10px #ff00cc,
+                 0 0 20px #ff00cc,
+                 0 0 40px #ff00cc;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+                 0 0 15px #00ffff,
+                 0 0 30px #00ffff,
+                 0 0 60px #00ffff;
+  }
+}
+.navbar-a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Glow + underline effect */
+.navbar-a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background: linear-gradient(90deg, #ff00cc, #3333ff, #00ffff);
+  transition: width 0.4s ease-in-out;
+  border-radius: 2px;
+}
+
+.navbar-a:hover {
+  color: #00ffff; /* text color glow */
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+.navbar-a:hover::after {
+  width: 100%; /* underline expands smoothly */
+}
+    .logo {
+  font-size: 24px;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.logo:hover {
+  background: none; /* remove gradient */
+  color: #00aaff; /* glowing blue */
+  text-shadow: 0 0 8px #00aaff, 0 0 16px #00aaff, 0 0 24px #00aaff; /* glow */
+  -webkit-text-fill-color: #00aaff;
+}
+    .image-glow {
+  transition: all 0.3s ease-in-out;
+}
+
+.image-glow:hover {
+  box-shadow: 0 0 20px 5px rgba(0, 128, 255, 0.8);
+  animation: pulse-glow 1.5s infinite;
+}
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 10px 2px rgba(0, 128, 255, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 25px 7px rgba(0, 128, 255, 1);
+  }
+  100% {
+    box-shadow: 0 0 10px 2px rgba(0, 128, 255, 0.6);
+  }
+}
+    .thirukkural-box{
+  position: relative;
+  width: 100%;
+  min-height: 150px;               /* responsive */
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 24px;
+  background: #1f2937;             /* matches your bg-gray-800 */
+  box-shadow: 0 8px 30px rgba(0,0,0,.35);
+}
+
+.thirukkural-front,.thirukkural-back{
+  position:absolute; inset:0;
+  padding:24px;
+  display:grid; align-content:center; /* vertical centering */
+  z-index:2; transition:opacity .35s ease;
+}
+.thirukkural-back{ opacity:0; color:#a5f3fc; font-style:italic; }
+
+.thirukkural-box:hover .thirukkural-front{ opacity:0; }
+.thirukkural-box:hover .thirukkural-back{  opacity:1; }
+
+/* checkerboard overlay */
+.checkerboard{
+  position:absolute; inset:0;
+  display:grid;
+  grid-template-columns:repeat(var(--cols,8),1fr);
+  grid-template-rows:repeat(var(--rows,6),1fr);
+  z-index:3; pointer-events:none;
+}
+.checkerboard .tile {
+  background: #b04198; /* blue */
+  opacity: 1;
+}
+
+/* On hover: animate tiles disappearing */
+.thirukkural-box:hover .checkerboard .tile {
+  animation: tileOut .6s both ease-in;
+  animation-delay: var(--d, 0ms);
+}
+
+/* When not hovered: animate tiles disappearing (other direction) */
+.thirukkural-box:not(:hover) .checkerboard .tile {
+  animation: tileIn 0.6s both ease-in;
+  animation-delay: var(--d, 0ms);
+}
+
+/* Keyframes */
+@keyframes tileOut {
+  0%   { opacity: 0.8; }
+  100% { opacity: 0; }
+}
+
+@keyframes tileIn {
+  0%   { opacity:0.8; }
+  100% { opacity: 0; }
+}
+.porul-title {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #f2ff00, #00a6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+    .quote-box{
+  position: relative;
+  width: 100%;
+  min-height: 150px;               /* responsive */
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 24px;
+  background: #1f2937;             /* matches your bg-gray-800 */
+  box-shadow: 0 8px 30px rgba(0,0,0,.35);
+}
+
+.quote-front,.quote-back{
+  position:absolute; inset:0;
+  padding:24px;
+  display:grid; align-content:center; /* vertical centering */
+  z-index:2; transition:opacity .35s ease;
+}
+.quote-back{ opacity:0; color:#a5f3fc; font-style:italic; }
+
+.quote-box:hover .quote-front{ opacity:0; }
+.quote-box:hover .quote-back{  opacity:1; }
+
+/* checkerboard overlay */
+.checkerboardquote{
+  position:absolute; inset:0;
+  display:grid;
+  grid-template-columns:repeat(var(--cols,8),1fr);
+  grid-template-rows:repeat(var(--rows,6),1fr);
+  z-index:3; pointer-events:none;
+}
+.checkerboardquote .tile {
+  background: #07caed; /* blue */
+  opacity: 1;
+}
+
+/* On hover: animate tiles disappearing */
+.quote-box:hover .checkerboardquote .tile {
+  animation: tileOutquote .6s both ease-in;
+  animation-delay: var(--d, 0ms);
+}
+
+/* When not hovered: animate tiles disappearing (other direction) */
+.quote-box:not(:hover) .checkerboardquote .tile {
+  animation: tileInquote 0.6s both ease-in;
+  animation-delay: var(--d, 0ms);
+}
+
+/* Keyframes */
+@keyframes tileOutquote {
+  0%   { opacity: 0.8; }
+  100% { opacity: 0; }
+}
+
+@keyframes tileInquote {
+  0%   { opacity:0.8; }
+  100% { opacity: 0; }
+}
+    .glitch-text {
+      position: relative;
+    }
+
+    /* Duplicate layers for glitch */
+    .glitch-text::before,
+    .glitch-text::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      overflow: hidden;
+      pointer-events: none;   /* Make sure hover does not affect */
+    }
+
+    .glitch-text::before {
+      animation: glitch-slice-1 3s infinite linear alternate-reverse;
+    }
+
+    .glitch-text::after {
+      animation: glitch-slice-2 1.2s infinite linear alternate-reverse;
+    }
+    .glitch-text:hover::before,
+.glitch-text:hover::after {
+  animation-play-state: paused;
+  opacity: 0;
+  visibility:hidden
+}
+
+    /* Slicing keyframes */
+    @keyframes glitch-slice-1 {
+      0% { clip: rect(20px, 9999px, 60px, 0); transform: translateX(-2px); }
+      5% { clip: rect(60px, 9999px, 100px, 0); transform: translateX(2px); }
+      10% { clip: rect(10px, 9999px, 50px, 0); transform: translateX(-1px); }
+      15% { clip: rect(70px, 9999px, 120px, 0); transform: translateX(1px); }
+      20% { clip: rect(40px, 9999px, 80px, 0); transform: translateX(-3px); }
+      25% { clip: rect(90px, 9999px, 140px, 0); transform: translateX(3px); }
+      30%,100% { clip: rect(0, 9999px, 0, 0); transform: translateX(0); }
+    }
+
+    @keyframes glitch-slice-2 {
+      0% { clip: rect(80px, 9999px, 120px, 0); transform: translateX(2px); }
+      5% { clip: rect(30px, 9999px, 70px, 0); transform: translateX(-2px); }
+      10% { clip: rect(100px, 9999px, 1500px, 0); transform: translateX(1px); }
+      15% { clip: rect(50px, 9999px, 90px, 0); transform: translateX(-1px); }
+      20% { clip: rect(10px, 9999px, 40px, 0); transform: translateX(3px); }
+      25% { clip: rect(60px, 9999px, 1500px, 0); transform: translateX(-3px); }
+      30%,100% { clip: rect(60, 9999px, 70, 40); transform: translateX(0); }
+    }
+    .tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -40px; /* Position above the element */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #111;
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Show tooltip on hover */
+.tooltip:hover::after {
+  opacity: 1;
+}
+    input {
+      padding: 12px 20px;
+      font-size: 18px;
+      border: 2px solid #444;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    img {
+      max-width: 250px; /* smaller size */
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      display: none; /* hidden at first */
+      margin-top: 15px;
+    }
+#achievement-message {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.5s ease-in-out;
+}
+
+#achievement-message.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+#achievement-img {
+  display: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+/* Flip container */
+.flip-container {
+  perspective: 1000px;
+  width: 220px;
+  height: 120px;
+  margin: 30px auto;
+  cursor: pointer;
+}
+
+/* Flipper */
+.flipper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Flip when clicked */
+.flip-container.flipped .flipper {
+  transform: rotateY(180deg);
+}
+
+/* Front & Back common styles */
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  text-align: center;
+  padding: 15px;
+}
+
+/* Front side */
+.front {
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  color: white;
+}
+
+/* Back side */
+.back {
+  background: linear-gradient(135deg, #facc15, #f97316);
+  color: #1f2937;
+  transform: rotateY(180deg);
+}
+
+/* Text styling */
+.front-text, .back-text {
+  padding: 10px;
+}
+  </style>
+
+</head>
+<body class="font-sans">
+  <!-- Header -->
+  <header class="gradient-bg animated-gradient p-4 shadow-lg">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      
+      <a href="index.html" class="text-2xl font-bold animated-text-gradient logo">N.KAILASH</a>
+      
+      <nav class="navbar-a absolute left-1/2 transform -translate-x-1/2 flex space-x-6 hidden md:flex">
+        <a href="index.html" class="hover:text-gray-200 font-cyber">Home</a>
+        <a href="about.html" class="hover:text-gray-200 font-cyber">About</a>
+        <a href="contact.html" class="hover:text-gray-200 font-cyber">Contact</a>
+      </nav>
+    
+    </div>
+  </header>
+<main class="px-4 py-8">
+  <!-- Hidden image (medium size). Replace src with your file once tested -->
+
+  <section class="relative max-w-5xl mx-auto px-4 py-12">
+    <div class="flex justify-center"><h2 id="achievements-text" style="cursor:pointer; color:#0a66c2; text-decoration:underline;" class="text-4xl md:text-5xl lg:text-6xl font-cyber font-bold mb-6 cyber-gradient-text fade-in-up glitch-text logo" data-text="Click This MASTER">Click This MASTER</h2></div>
+    <div class="relative flex justify-center fade-in-up group">
+      <img id="achievement-img" src="master.jpg" alt="Hero Image" class="rounded-lg shadow-lg breathing-img image-glow"/>
+    </div>
+<div id="achievement-message" 
+       class="hidden mt-8 p-6 rounded-lg shadow-2xl max-w-2xl mx-auto transition duration-300 ease-in-out bg-gradient-to-r from-yellow-50 to-yellow-100 border border-yellow-300">
+    <h3 class="text-2xl font-bold mb-4 text-yellow-800 text-center">HAPPY TEACHER'S DAY MASTER
+      <br><br>💐 With Gratitude and Respect 💐</h3>
+    <p class="text-lg leading-relaxed text-gray-800">
+      Dear Master,  
+      <br><br>
+      On this very special day, We want to take a moment to express our <span style="color: #ff00aa; font-weight: bold;">deepest gratitude</span> for all that you have done for us.  
+      <br><br>
+      Your <span style="color: #00f1d9; font-weight: bold;">guidance</span> has been a light in our journey, showing us the right path even when things seemed unclear. You have not only shared your knowledge, but also <span style="color: #f92900; font-weight: bold;">your kindness, patience,</span> and <span style="color: #f92900; font-weight: bold;">care</span>, helping us grow not just as a student, but as a person.  
+      <br><br>
+      There were times when we doubted ourself, yet you believed in us and encouraged us to push forward. You taught us that education is not just about books and exams, but about <span style="color: #0029f9; font-weight: bold;">building character</span>, embracing challenges, and striving to be better every day.  
+      <br><br>
+      Teachers like you leave a mark that lasts a lifetime. The lessons you’ve taught go far beyond the classroom, and we will always carry them with us wherever we go.  
+      <br><br>
+      Thank you for being <span style="color: #ff9800; font-weight: bold;">our father, our friend, our mentor, our guide, and our inspiration.</span>  
+      <br><br>
+      Wishing you a joyful and memorable <strong>Teacher’s Day</strong>, filled with love, happiness, and the recognition you truly deserve. 🌸🎉✨  
+      <br><br>
+      <span class="font-semibold text-yellow-900">With heartfelt appreciation,<br>Your XII 'C' Children</span>
+    </p>
+  </div>
+
+
+  <div class="overflow-hidden rounded-2xl shadow-2xl border-2 border-cyan-400">
+    <div id="cyberSlides" class="flex transition-transform duration-700 ease-in-out">
+    </div>
+  </div>
+  <div id="click-box" class="hidden flip-container" onclick="this.classList.toggle('flipped')">
+  <div class="flipper">
+    <!-- Front side -->
+    <div class="front">
+      <p class="front-text">Click Me 🎁</p>
+    </div>
+    <!-- Back side -->
+    <div class="back">
+      <p class="back-text">"Namaste My Dear Namaste!" 🌟</p>
+    </div>
+  </div>
+</div>
+<div id="click-box2" class="hidden flip-container" onclick="this.classList.toggle('flipped')">
+  <div class="flipper">
+    <!-- Front side -->
+    <div class="front">
+      <p class="front-text">Click Me 🎁</p>
+    </div>
+    <!-- Back side -->
+    <div class="back">
+      <p class="back-text">"Sharvamangalamum Undagattum!" 🌟</p>
+    </div>
+  </div>
+</div>
+<div id="click-box3" class="hidden flip-container" onclick="this.classList.toggle('flipped')">
+  <div class="flipper">
+    <!-- Front side -->
+    <div class="front">
+      <p class="front-text">Click Me 🎁</p>
+    </div>
+    <!-- Back side -->
+    <div class="back">
+      <p class="back-text">"Appreciation Kuduthurlam! Very Good My Dear!" 🌟</p>
+    </div>
+  </div>
+</div>
+<div id="click-box4" class="hidden flip-container" onclick="this.classList.toggle('flipped')">
+  <div class="flipper">
+    <!-- Front side -->
+    <div class="front">
+      <p class="front-text">Click Me 🎁</p>
+    </div>
+    <!-- Back side -->
+    <div class="back">
+      <p class="back-text">"Come again my dear come again" 🌟</p>
+    </div>
+  </div>
+</div>
+<div id="click-box5" class="hidden flip-container" onclick="this.classList.toggle('flipped')">
+  <div class="flipper">
+    <!-- Front side -->
+    <div class="front">
+      <p class="front-text">Click Me 🎁</p>
+    </div>
+    <!-- Back side -->
+    <div class="back">
+      <p class="back-text">"Subject ah kashta pattu padikadha ista pattu padi" 🌟</p>
+    </div>
+  </div>
+</div>
+<div id="click-box6" class="hidden flip-container" onclick="this.classList.toggle('flipped')">
+  <div class="flipper">
+    <!-- Front side -->
+    <div class="front">
+      <p class="front-text">Click Me 🎁</p>
+    </div>
+    <!-- Back side -->
+    <div class="back">
+      <p class="back-text">"Mokka joke mattum venam" 🌟</p>
+    </div>
+  </div>
+</div>
+<div id="click-box7" class="hidden flip-container" onclick="this.classList.toggle('flipped')">
+  <div class="flipper">
+    <!-- Front side -->
+    <div class="front">
+      <p class="front-text">Click Me 🎁</p>
+    </div>
+    <!-- Back side -->
+    <div class="back">
+      <p class="back-text">"Naa adha paaka adhu enna paaka" 🌟</p>
+    </div>
+  </div>
+</div>
+<div id="click-box8" class="hidden flip-container" onclick="this.classList.toggle('flipped')">
+  <div class="flipper">
+    <!-- Front side -->
+    <div class="front">
+      <p class="front-text">Click Me 🎁</p>
+    </div>
+    <!-- Back side -->
+    <div class="back">
+      <p class="back-text">OK.. prayer my dear... HARI OM! (prayer)" 🌟</p>
+    </div>
+  </div>
+</div>
+<div id="click-box9" class="hidden flip-container" onclick="this.classList.toggle('flipped')">
+  <div class="flipper">
+    <!-- Front side -->
+    <div class="front">
+      <p class="front-text">Click Me 🎁</p>
+    </div>
+    <!-- Back side -->
+    <div class="back">
+      <p class="back-text">"Thanks giving sollirlaama?" 🌟</p>
+    </div>
+  </div>
+</div>
+<div id="click-box10" class="hidden flip-container" onclick="this.classList.toggle('flipped')">
+  <div class="flipper">
+    <!-- Front side -->
+    <div class="front">
+      <p class="front-text">Click Me 🎁</p>
+    </div>
+    <!-- Back side -->
+    <div class="back">
+      <p class="back-text">"THANK YOU SO MUCH FOR ALL MASTER!" 🌟</p>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+  <!-- Stats Section -->
+  <footer class="footer">
+  <div class="social-icons">
+    <a href="https://www.instagram.com/kailash_.kanth" target="_blank" class="icon instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://wa.me/918489091701" target="_blank" class="icon whatsapp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://www.youtube.com" target="_blank" class="icon youtube">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://www.linkedin.com" target="_blank" class="icon linkedin">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com" target="_blank" class="icon github">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://twitter.com" target="_blank" class="icon twitter">
+      <i class="fab fa-twitter"></i>
+    <a href="KailashResume.pdf" target="_blank" class="icon resume">
+      <i class="fas fa-file-alt"></i>
+    </a>
+    </a>
+  </div>
+  <p>© 2025 N.KAILASH. All rights reserved.</p>
+</footer>
+  <script>
+    let cyberIndex = 0;
+  const cyberSlides = document.getElementById("cyberSlides");
+  const totalSlides = cyberSlides.children.length;
+
+  function showSlide(index) {
+    if (index >= totalSlides) cyberIndex = 0;
+    else if (index < 0) cyberIndex = totalSlides - 1;
+    else cyberIndex = index;
+    cyberSlides.style.transform = `translateX(-${cyberIndex * 100}%)`;
+  }
+
+  function moveSlide(step) {
+    showSlide(cyberIndex + step);
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("achievements-text");
+  const img = document.getElementById("achievement-img");
+  const messageBox = document.getElementById("achievement-message");
+  const box = document.getElementById("click-box");
+  const box2 = document.getElementById("click-box2");
+  const box3 = document.getElementById("click-box3");
+  const box4 = document.getElementById("click-box4");
+  const box5 = document.getElementById("click-box5");
+  const box6 = document.getElementById("click-box6");
+  const box7 = document.getElementById("click-box7");
+  const box8 = document.getElementById("click-box8");
+  const box9 = document.getElementById("click-box9");
+  const box10 = document.getElementById("click-box10");
+  let fired = false;
+
+  btn.addEventListener("click", () => {
+    // Toggle teacher's image
+    img.style.display = img.style.display === "none" || img.style.display === "" ? "block" : "none";
+
+    // Toggle message visibility
+    messageBox.classList.toggle("hidden");
+    messageBox.classList.toggle("show");
+
+    // Show the flip box
+    box.classList.remove("hidden");
+    box2.classList.remove("hidden");
+    box3.classList.remove("hidden");
+    box4.classList.remove("hidden");
+    box5.classList.remove("hidden");
+    box6.classList.remove("hidden");
+    box7.classList.remove("hidden");
+    box8.classList.remove("hidden");
+    box9.classList.remove("hidden");
+    box10.classList.remove("hidden");
+
+    // Confetti effect - prevent multiple triggers
+    if (fired) return;
+    fired = true;
+
+    const duration = 5000;
+    const end = Date.now() + duration;
+
+    (function frame() {
+      confetti({
+        particleCount: 5,
+        angle: 90,
+        spread: 360,
+        origin: { x: Math.random(), y: 0 },
+        ticks: 300
+      });
+
+      if (Date.now() < end) {
+        requestAnimationFrame(frame);
+      } else {
+        fired = false;
+      }
+    })();
+  });
+});
+</script>
+</body>
+</html>
