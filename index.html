@@ -730,6 +730,18 @@ element.style {
     <div id="cyberSlides" class="flex transition-transform duration-700 ease-in-out">
     </div>
   </div>
+  <div id="click-box0" class="hidden flip-container" onclick="this.classList.toggle('flipped')">
+  <div class="flipper">
+    <!-- Front side -->
+    <div class="front">
+      <p class="front-text">Click Me 🎁</p>
+    </div>
+    <!-- Back side -->
+    <div class="back">
+      <p class="back-text">"GOD IS GREAT" 🌟</p>
+    </div>
+  </div>
+</div>
   <div id="click-box" class="hidden flip-container" onclick="this.classList.toggle('flipped')">
   <div class="flipper">
     <!-- Front side -->
@@ -751,6 +763,18 @@ element.style {
     <!-- Back side -->
     <div class="back">
       <p class="back-text">"Sharvamangalamum Undagattum!" 🌟</p>
+    </div>
+  </div>
+</div>
+<div id="click-box2_1" class="hidden flip-container" onclick="this.classList.toggle('flipped')">
+  <div class="flipper">
+    <!-- Front side -->
+    <div class="front">
+      <p class="front-text">Click Me 🎁</p>
+    </div>
+    <!-- Back side -->
+    <div class="back">
+      <p class="back-text">"Chevatiruven Cheveti" 🌟</p>
     </div>
   </div>
 </div>
@@ -904,8 +928,10 @@ element.style {
   const btn = document.getElementById("achievements-text");
   const img = document.getElementById("achievement-img");
   const messageBox = document.getElementById("achievement-message");
+  const box0 = document.getElementById("click-box0");
   const box = document.getElementById("click-box");
   const box2 = document.getElementById("click-box2");
+  const box2_1 = document.getElementById("click-box2_1");
   const box3 = document.getElementById("click-box3");
   const box4 = document.getElementById("click-box4");
   const box5 = document.getElementById("click-box5");
@@ -925,8 +951,10 @@ element.style {
     messageBox.classList.toggle("show");
 
     // Show the flip box
+    box0.classList.remove("hidden");
     box.classList.remove("hidden");
     box2.classList.remove("hidden");
+    box2_1.classList.remove("hidden");
     box3.classList.remove("hidden");
     box4.classList.remove("hidden");
     box5.classList.remove("hidden");
@@ -964,4 +992,5 @@ element.style {
 </body>
 
 </html>
+
 
